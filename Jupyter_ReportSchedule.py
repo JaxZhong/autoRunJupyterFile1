@@ -21,12 +21,12 @@ from nbconvert.preprocessors import ExecutePreprocessor, CellExecutionError
 
 today = str(datetime.date.today())
 BASE_PATH = 'D:/projectFile/lrhg/userfiles/jupyter/temp/' + today + '/'
-token = "8d81b6f2e4bbf5f76215b051724f503003da397bac0c0305e3ca320f2a76568e"
+token = "XXXXXXXXXXXX"
 
 if not os.path.exists(BASE_PATH):
     os.makedirs(BASE_PATH)
 
-conn = pymysql.connect(host = "101.37.33.198",user = "lrqp_db",passwd = "!Lrqp_db20190329",db = "lrqp",charset="utf8")
+conn = pymysql.connect(host = "101.37.33.198",user = "lrqp_db",passwd = "XXXXXXXXXXXX",db = "lrqp",charset="utf8")
 cur = conn.cursor()
 
 
@@ -47,7 +47,7 @@ def insert_sql(id, create_date, content, report_path, alert_info):
         conn.rollback()
 
 def sendDingdingQunMsg(report_path, task_name, status, result):
-    url = "https://home.lowrisk.com.cn/ddhelper/rbtMsg"
+    url = "XXXXXXXXXXXX"
     headers = {
         'content-type': "application/json"
     }
