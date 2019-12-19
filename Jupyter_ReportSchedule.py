@@ -1,10 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time    : 2019/12/15 0015 22:29
-# @Author  : jiadianduo
+# @Author  : Jax
 # @Site    : 
 # @File    : Jupyter_ReportSchedule.py
-# @Software: PyCharm Community Edition
 
 import os
 import pymysql
